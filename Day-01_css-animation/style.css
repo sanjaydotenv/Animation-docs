@@ -5,7 +5,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 500vh;
   width: 100%;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -151,7 +151,7 @@ body {
   height: 200px;
   width: 200px;
   background-color: #fff;
-  transition: all 0.3s cubic-bezier(.77,.11,.82,.19);
+  transition: all 0.3s cubic-bezier(0.77, 0.11, 0.82, 0.19);
 }
 
 .transform5-5:hover {
@@ -161,4 +161,182 @@ body {
 .line-2 {
   display: flex;
   gap: 20px;
+}
+
+.transform5-6 {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  transition: all 0.3s cubic-bezier(0.77, 0.11, 0.82, 0.19);
+  transform-origin: top left;
+  animation: animate 4s infinite alternate;
+}
+
+@keyframes animate {
+  0% {
+    width: 200px;
+    background-color: #fff;
+  }
+  20% {
+    width: 200px;
+    background-color: aqua;
+  }
+  50% {
+    width: 300px;
+    background-color: rgb(19, 169, 32);
+  }
+  70% {
+    width: 400px;
+    background-color: rgb(148, 188, 17);
+  }
+  100% {
+    width: 500px;
+    background-color: rgb(193, 102, 10);
+  }
+}
+
+.transform5-7 {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  transition: all 0.3s cubic-bezier(0.77, 0.11, 0.82, 0.19);
+  margin-top: 30px;
+  animation: steps 3s steps(5) infinite;
+}
+
+@keyframes steps {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+.transform5-7-1 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  animation: multi 3s alternate infinite;
+}
+
+@keyframes multi {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(700px);
+  }
+}
+
+.transform5-7-1:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.transform5-7-1:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.transform5-7-1:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.transform5-7-1:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.transform5-7-1:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.marque-wrapper {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marque-track {
+  height: 80%;
+  width: 100%;
+  background-color: green;
+  animation: marque-effect linear 5s infinite;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  font-size: 40px;
+}
+
+@keyframes marque-effect {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-scene {
+  height: 100vh;
+  width: 100%;
+  perspective: 1300px;
+  overflow: hidden;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: carousel-spin 20s linear infinite;
+}
+
+.carousel-items {
+  height: 25%;
+  width: 10%;
+  position: absolute;
+  /* backface-visibility: hidden; */
+}
+
+.carousel-items img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-items:nth-child(1) {
+  transform: rotateY(0deg) translateZ(600px);
+}
+.carousel-items:nth-child(2) {
+  transform: rotateY(45deg) translateZ(600px);
+}
+.carousel-items:nth-child(3) {
+  transform: rotateY(90deg) translateZ(600px);
+}
+.carousel-items:nth-child(4) {
+  transform: rotateY(135deg) translateZ(600px);
+}
+.carousel-items:nth-child(5) {
+  transform: rotateY(180deg) translateZ(600px);
+}
+.carousel-items:nth-child(6) {
+  transform: rotateY(225deg) translateZ(600px);
+}
+.carousel-items:nth-child(7) {
+  transform: rotateY(270deg) translateZ(600px);
+}
+.carousel-items:nth-child(8) {
+  transform: rotateY(315deg) translateZ(600px);
+}
+
+@keyframes carousel-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
