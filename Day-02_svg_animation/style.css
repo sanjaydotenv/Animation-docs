@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(21, 20, 20);
+}
+
+.signature {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: svg-animation 1.7s ease-out infinite alternate;
+}
+
+@keyframes svg-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
