@@ -17,5 +17,49 @@
         stroke-width="4"
       />
     </svg>
+
+    <svg width="400" height="180" viewBox="0 0 400 150">
+      <path
+        class="track"
+        pathLength="1"
+        d="M10, 120 C120,-20 280,320 390,30"
+        fill="none"
+        stroke="white"
+        stroke-width="2"
+      />
+      <circle
+        class="ball"
+        r="10"
+        fill="red"
+      />
+    </svg>
+
+    <svg width="120" height="120">
+      <circle cy="50" cx="50" r="15" fill="aqua">
+        <animate
+        attributeName="r"
+        values="15;30;15"
+        dur="2s"
+        repeatCount="indefinite"
+         />
+      </circle>
+    </svg>
+
+
+    <svg class="wave-text" viewBox="0 0 500 60">
+      <path id="curve" d="M10 , 40 C130 , -10 370,90 490,30" fill="none"  />
+      <text font-size="24" fill="#fefefe">
+        <textPath href="#curve" startOffset="0%">
+          Sanjaydotenv
+          <animate
+          attributeName="startOffset"
+          from="0%"
+          to="100%"
+          dur="5s"
+          repeatCount="indefinite"
+           />
+        </textPath>
+      </text>
+    </svg>
   </body>
 </html>
