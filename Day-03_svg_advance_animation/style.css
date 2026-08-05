@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    background-color: rgb(26, 24, 24);
+}
+
+.ball-wrapper {
+  filter: url(#goo);
+  height: 100px;
+  width: 400px;
+  position: relative;
+}
+
+.ball {
+  height: 150px;
+  width: 150px;
+  background-color: #5c6ce7;
+  border-radius: 50%;
+  position: absolute;
+  animation: Glitch 2.5s ease-in-out infinite alternate;
+}
+
+.ball-2 {
+  animation-delay: -1.4s;
+}
+
+@keyframes Glitch {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+
+.wave-wrapper {
+  height: 200px;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wave {
+    height: 50px;
+    width: 50px;
+    background-color: #5c6ce7;
+    border-radius: 50%;
+    animation:wave 1s infinite ease-in-out;
+
+}
+
+.wave-1 {
+    animation-delay: 1.1s;
+}
+.wave-2 {
+    animation-delay: 1.2s;
+}
+.wave-3 {
+    animation-delay: 1.3s;
+}
+.wave-4 {
+    animation-delay: 1.4s;
+}
+.wave-5 {
+    animation-delay: 1.5s;
+}
+
+@keyframes wave {
+   50% {
+     transform: translateY(-50px);
+   }
+    100% {
+     transform: translateY(0px);
+   }
+}
