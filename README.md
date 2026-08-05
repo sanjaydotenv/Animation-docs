@@ -18,4 +18,4 @@ Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-02_svg_animation/
 
 Learn how to create modern Gooey (Liquid) effects using SVG Filters and build smooth wave loading animations with pure CSS Keyframes.
 
-Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-02_svg_advance_animation/
+Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-03_svg_advance_animation/
