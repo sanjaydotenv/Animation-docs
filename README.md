@@ -6,6 +6,7 @@ A hands-on introduction to CSS animations covering transforms, transitions, timi
 
 Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-01_css-animation/
 
+---
 
 ## 📅 Day 02 – SVG Animations
 
@@ -13,9 +14,18 @@ Learn the fundamentals of SVG animations, including path drawing, motion paths, 
 
 Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-02_svg_animation/
 
+---
 
 ## 📅 Day 03 – SVG Gooey & Wave Animation
 
 Learn how to create modern Gooey (Liquid) effects using SVG Filters and build smooth wave loading animations with pure CSS Keyframes.
 
 Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-03_svg_advance_animation/
+
+---
+
+## 📅 Day-04 Browser APIs & Animation
+
+This folder contains notes, examples, and practice code for essential Browser APIs, DOM performance techniques, and animation concepts used in modern web development.
+
+Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-04_js_overview_for_animation/

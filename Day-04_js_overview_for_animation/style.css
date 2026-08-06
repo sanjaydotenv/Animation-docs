@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.items {
+  height: 200px;
+  width: 200px;
+  background-color: royalblue;
+}
+
+.toggle {
+  background-color: red;
+}
+
+.move {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(232, 30, 3);
+  margin-top: 50px;
+}
