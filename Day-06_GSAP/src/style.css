@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  background-color: #1b1b1b;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
