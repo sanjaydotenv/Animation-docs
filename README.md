@@ -24,3 +24,8 @@ Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-03_svg_advance_an
 
 ---
 
+## 📅 Day-04 Browser APIs & Animation
+
+This folder contains notes, examples, and practice code for essential Browser APIs, DOM performance techniques, and animation concepts used in modern web development.
+
+Live Link :- 
