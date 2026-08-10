@@ -7,69 +7,19 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
-.loader {
-  height: 100vh;
+.page {
+  height: 150vh;
   width: 100%;
-  background: #0f0f0f;
-  z-index: 9999;
-  position: fixed;
+  background-color: black;
 }
 
-.loader-count {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loader-count h1 {
-  font-size: 4rem;
-  color: whitesmoke;
-}
-
-.hero-section {
-  height: 100vh;
-  width: 100%;
-  background-color: #0f0f0f;
-  position: relative;
-}
-
-.hero-bg {
-  height: 100%;
-  width: 100%;
+.box {
+  height: 250px;
+  width: 250px;
+  background-color: red;
   position: absolute;
-  z-index: 0;
-}
 
-.hero-bg img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.hero-content {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.heading,
-.sub-heading {
-  overflow: hidden;
-}
-
-.heading h1 {
-  font-size: 3rem;
-  margin-top: 30px;
-}
-
-.sub-heading p {
-  font-size: 2rem;
+  top: 80%;
 }
