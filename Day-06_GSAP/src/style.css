@@ -1,37 +1,75 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   height: 100%;
   width: 100%;
-  background-color: #1b1b1b;
+  overflow: hidden;
 }
 
-.box1 {
-  height: 140px;
-  width: 140px;
-  background-color: red;
+.loader {
+  height: 100vh;
+  width: 100%;
+  background: #0f0f0f;
+  z-index: 9999;
+  position: fixed;
 }
-.box2 {
-  height: 140px;
-  width: 140px;
-  background-color: rgb(13, 146, 53);
+
+.loader-count {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.box3 {
-  height: 140px;
-  width: 140px;
-  background-color: rgb(255, 243, 12);
+
+.loader-count h1 {
+  font-size: 4rem;
+  color: whitesmoke;
 }
-.box4 {
-  height: 140px;
-  width: 140px;
-  background-color: rgb(0, 13, 255);
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #0f0f0f;
+  position: relative;
 }
-.box5 {
-  height: 140px;
-  width: 140px;
-  background-color: rgb(255, 0, 247);
+
+.hero-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.hero-bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading,
+.sub-heading {
+  overflow: hidden;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+.sub-heading p {
+  font-size: 2rem;
 }
