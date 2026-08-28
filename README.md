@@ -35,3 +35,15 @@ Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-04_js_overview_fo
 Magnetic Effect Animation
 
 Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-05_Project-1_animation
+
+## 📅 Day-06 GSAP
+
+How Gsap Work's
+
+Live Link :-
+
+## 📅 Day-07 Barba JS
+
+Basic Understanding of barba js
+
+Live Link :-
