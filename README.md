@@ -40,16 +40,12 @@ Live Link :- https://sanjaydotenv.github.io/Animation-docs/Day-05_Project-1_anim
 
 How Gsap Work's
 
-Live Link :-
+Live Link :- https://animation-docs.vercel.app/
 
 ## 📅 Day-07 Barba JS
 
 Basic Understanding of barba js
 
-Live Link :-
-
 ## 📅 Day-08 Barba JS
 
 Overview of transitions how work's leave, enter, current-container, next-container soemthing like that
-
-Live Link :-
