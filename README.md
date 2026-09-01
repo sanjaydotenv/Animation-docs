@@ -47,3 +47,9 @@ Live Link :-
 Basic Understanding of barba js
 
 Live Link :-
+
+## 📅 Day-08 Barba JS
+
+Overview of transitions how work's leave, enter, current-container, next-container soemthing like that
+
+Live Link :-
