@@ -1,0 +1,21 @@
+{
+  "name": "day-09_practice_page-transition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@barba/core": "^2.10.3",
+    "gsap": "^3.15.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0"
+  }
+}
