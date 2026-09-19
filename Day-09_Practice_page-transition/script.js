@@ -10,6 +10,7 @@ barba.init({
           scaleY: 1,
           transformOrigin: "bottom",
           duration: 1.2,
+          stagger: 0.1,
           ease: "circ.inOut",
         });
       },
@@ -17,6 +18,7 @@ barba.init({
         return gsap.to(".transition", {
           scaleY: 0,
           transformOrigin: "top",
+          stagger: -0.1,
           duration: 1.2,
           ease: "circ.inOut",
         });

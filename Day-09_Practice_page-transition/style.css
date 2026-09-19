@@ -73,3 +73,9 @@ button:hover {
 body::-webkit-scrollbar {
   display: none;
 }
+.t1 {
+  background-color: blue;
+}
+.t2 {
+  background-color: yellow;
+}
