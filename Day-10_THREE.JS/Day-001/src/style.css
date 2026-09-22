@@ -1,0 +1,13 @@
+* {
+    margin: 0xp;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+}
+
