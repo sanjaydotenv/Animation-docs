@@ -1,6 +1,9 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import lilGui from "lil-gui";
+
+const gui = new lilGui();
 
 const size = {
   width: window.innerWidth,
@@ -17,7 +20,18 @@ const material = new THREE.MeshBasicMaterial({
 
 const box = new THREE.Mesh(geometry, material);
 
+
+
 scene.add(box);
+
+gui.add(box.position, "x").min(-5).max(5).name("Position X");
+gui.add(box.position, "y").min(-5).max(5).name("Position X");
+gui.add(box.position, "z").min(-5).max(5).name("Position X");
+
+gui.add(box, "visible");
+gui.add(material, "wireframe").onChange((value) => {
+  material.wireframe = value;
+});
 
 // Orthographic Camera
 // const camera = new THREE.OrthographicCamera(
@@ -54,12 +68,12 @@ renderer.setSize(size.width, size.height);
 renderer.render(scene, camera);
 
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true
+controls.enableDamping = true;
 
 const timer = new THREE.Timer();
 function animate() {
   timer.update();
-  controls.update()
+  controls.update();
   const delta = timer.getDelta();
   // box.rotation.x += delta;
   renderer.render(scene, camera);
