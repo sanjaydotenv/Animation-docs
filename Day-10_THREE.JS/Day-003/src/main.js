@@ -36,6 +36,7 @@ renderer.render(scene, camera);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 controls.enableDamping = true;
+// controls.dampingFactor = 1
 
 const timer = new THREE.Timer();
 
@@ -44,8 +45,8 @@ function animate() {
   controls.update();
   const delta = timer.getDelta();
 
-  cube.rotation.x += delta * 1;
-  cube.rotation.y += delta * 1;
+  // cube.rotation.x += delta * 1;
+  // cube.rotation.y += delta * 1;
 
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
