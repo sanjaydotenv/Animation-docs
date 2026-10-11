@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #101010;
+}
+
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  pointer-events: none; /* if your are remove this line than you can move model with the use or mouse */
+}
+
+.model-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8%;
+  overflow: hidden;
+}
+
+.hero {
+  background: #101010;
+}
+
+.details {
+  background: #171717;
+  justify-content: flex-end;
+}
+
+.final {
+  background: #101010;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  max-width: 500px;
+  pointer-events: none;
+}
+
+.content p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #aaa;
+  margin-bottom: 24px;
+}
+
+.content h1,
+.content h2 {
+  font-size: clamp(48px, 8vw, 110px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  font-weight: 500;
+}
+
+.content span {
+  display: inline-block;
+  margin-top: 32px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .model-section {
+    padding: 7%;
+  }
+
+  .content h1,
+  .content h2 {
+    font-size: 56px;
+    letter-spacing: -2px;
+  }
+}
